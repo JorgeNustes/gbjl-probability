@@ -1,6 +1,6 @@
-# gbjl-distributions
+# gbjl-propability
 
-gbjl-distributions is a package that uses python to calculate Gaussian and Binomial distributions. The main uses are:
+gbjl-propability is a package that uses python to calculate Gaussian and Binomial distributions. The main uses are:
 
   - Calculate Gaussian and Binomial distributions
   - Plot the normalized *histogram* of the distibution
@@ -14,10 +14,10 @@ gbjl-distributions is a package that uses python to calculate Gaussian and Binom
 
 ## Installation
 
-Install gbjl-distributions via `pip` from the command line
+Install gbjl-propability via `pip` from the command line
 
 ```sh
-$ pip install gbjl-distributions
+$ pip install -i https://test.pypi.org/simple/ gbjl-probability
 ```
 ## License
 
