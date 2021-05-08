@@ -84,10 +84,10 @@ class Gaussian(Distribution):
 			
 		with open(file_name) as file:
 			data_list = []
-			line = file.readline()
+			line = file.readline().strip()
 			while line:
-				data_list.append(int(line))
-				line = file.readline()
+				data_list.append(int(float(str(line))))
+				line = file.readline().strip()
 		file.close()
 	
 		self.data = data_list
