@@ -17,7 +17,7 @@ gbjl-probability is a package that uses python to calculate Gaussian and Binomia
 Install gbjl-probability via `pip` from the command line
 
 ```sh
-$ pip install -i https://test.pypi.org/simple/ gbjl-probability
+$ pip install gbjl-probability
 ```
 ## License
 
