@@ -57,29 +57,7 @@ class Binomial(Distribution):
         self.stdev = math.sqrt(self.n * self.p * (1 - self.p))
         
         return self.stdev
-        
-        
-    def replace_stats_with_data(self):
-    
-        """Function to calculate p and n from the data set
-        
-        Args: 
-            None
-        
-        Returns: 
-            float: the p value
-            float: the n value
-    
-        """
-    
-        self.n = len(self.data)
-        self.p = 1.0 * sum(self.data) / len(self.data)
-        self.mean = self.calculate_mean()
-        self.stdev = self.calculate_stdev()
-        
-        return self.p, self.n
-
-    
+         
         
     def plot_bar(self):
         """Function to output a histogram of the instance variable data using 
