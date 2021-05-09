@@ -1,5 +1,5 @@
 import math
-import matplotlib.pyplot as plt
+import plotly.graph_objects as go
 from .Generaldistribution import Distribution
 
 class Binomial(Distribution):
@@ -61,7 +61,7 @@ class Binomial(Distribution):
         
     def plot_bar(self):
         """Function to output a histogram of the instance variable data using 
-        matplotlib pyplot library.
+        the plotly library.
         
         Args:
             None
@@ -69,11 +69,13 @@ class Binomial(Distribution):
         Returns:
             None
         """
-                
-        plt.bar(x = ['0', '1'], height = [(1 - self.p) * self.n, self.p * self.n])
-        plt.title('Bar Chart of Data')
-        plt.xlabel('outcome')
-        plt.ylabel('count')
+        x = ['Non-desired', 'Desired']
+        y = [(1 - self.p) * self.n, self.p * self.n]
+        fig = go.Figure([go.Bar(x = x, y = y)])
+        fig.update_layout(xaxis=dict(title = 'Outcome'),
+                          yaxis=dict(title = 'Count'), 
+                          title = 'Bar Chart of Data')
+        fig.show()       
         
         
         
@@ -81,7 +83,7 @@ class Binomial(Distribution):
         """Probability density function calculator for the binomial distribution.
         
         Args:
-            x (float): point for calculating the probability density function
+            k (float): point for calculating the probability density function
             
         
         Returns:
@@ -116,12 +118,12 @@ class Binomial(Distribution):
             y.append(self.pdf(i))
 
         # make the plots
-        plt.bar(x, y)
-        plt.title('Distribution of Outcomes')
-        plt.ylabel('Probability')
-        plt.xlabel('Outcome')
+        fig = go.Figure([go.Bar(x = x, y = y)])
+        fig.update_layout(xaxis=dict(title = 'Outcome'),
+                          yaxis=dict(title = 'Probability'), 
+                          title = 'PDF of Outcomes')
 
-        plt.show()
+        fig.show()
 
         return x, y
         
