@@ -25,7 +25,7 @@ $ pip install gbjl-probability
 
 ## Usage 
 
-See `GBdistribution.ipynb` to see an example of how to use the `gbjl-probability` package.
+Open `GBdistribution.ipynb` to see an example of how to use the `gbjl-probability` package.
 
 ## License
 
