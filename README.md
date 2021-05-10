@@ -1,5 +1,5 @@
 # gbjl-probability
-[![GitHub license](https://img.shields.io/github/license/JorgeNustes/gbjl-probability)](https://github.com/JorgeNustes/gbjl-probability/blob/master/license.txt)
+[![GitHub license](https://img.shields.io/github/license/JorgeNustes/gbjl-probability)](https://github.com/JorgeNustes/gbjl-probability/blob/master/license.txt) [![GitHub forks](https://img.shields.io/github/forks/JorgeNustes/gbjl-probability)](https://github.com/JorgeNustes/gbjl-probability/network)
 
 gbjl-probability is a package that uses Python to calculate Gaussian and Binomial distributions. The main uses are:
 
